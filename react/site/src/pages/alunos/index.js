@@ -55,7 +55,8 @@ export default function Index() {
     }
 
     async function remover(id) {
-        let r = await api.remover(id);
+        await api.remover(id);
+        
         alert('Aluno removido');
 
         listar();
